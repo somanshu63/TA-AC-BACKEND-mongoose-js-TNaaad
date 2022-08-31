@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var addressSchema = new Schema({
     village: String,
-    city: {type: String, minlength: 5, maxlength: 15},
-    state: {type: String, minlength: 5, maxlength: 15},
+    city: {type: String, required: true},
+    state: {type: String, required: true},
     pin: Number,
     user: Schema.Types.ObjectId
 }, {timestamps: true});
