@@ -2,13 +2,7 @@
 var express = require('express');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-var schema = mongoose.schema;
 
-var articleSchema = new Schema({
-    author: String,
-    title: String,
-    description: String
-});
 
 //connect to database
 mongoose.connect("mongodb://127.0.0.1:27017/test", 
